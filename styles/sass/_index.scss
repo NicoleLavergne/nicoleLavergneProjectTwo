@@ -9,7 +9,7 @@ body{
 }
 
 .wrapper {
-    border:1px solid green;
+    // border:1px solid green;
 	max-width:1280px;
 	width:80%;
     margin:0 auto;
@@ -24,7 +24,7 @@ header{
     position:relative;
 
     .titleWrapper{
-        border:2px solid orange;
+        // border:2px solid orange;
         max-width:1280px;
 	    width:80%;
         margin:0 auto;
@@ -37,14 +37,14 @@ header{
             letter-spacing:.2rem;
             line-height: 64.5px;
             width:50%;
-            margin-top:10%;
+            margin-top:7%;
         }
     }
 }
 
 .headerCouch{
     // border:1px solid brown;
-    width:60%;
+    width:50%;
     position: absolute;
     bottom:-10%;
 
@@ -80,7 +80,7 @@ p{
 
 .discover{
     background:$white;
-    padding:100px 0px 100px 0px;
+    @include sectionPadding;
 
     .discoverContainer{
         display:flex;
@@ -106,7 +106,7 @@ p{
 }
 
 .picGallery{
-    padding:100px 0px 100px 0px;
+    @include sectionPadding;
     background:$ice;
     
     ul{
@@ -125,6 +125,7 @@ p{
 
 .communityGallery{
     background:$white;
+    @include sectionPadding;
 
     .galleryFlex{
         display:flex;
@@ -163,9 +164,61 @@ p{
             margin-top:20px;
 
         }
+    }
 }
 
-}
 .readMoreGallery{
     background:$ice;
+    padding:0px 50px 50px 0px;
+    
+    .readMoreContain{
+        display:flex;
+        flex-wrap:wrap;
+
+        .readMoreText {
+            width:50%;
+            padding:5%;
+        }
+
+        .rightText{
+            text-align:right;
+        }
+        
+        .readMoreImg{
+            width:50%;
+        }
+
+
+        .leftImg{
+            position:relative;
+
+            img{
+                position:absolute;
+                top:-10%;
+            }
+        }
+        
+        .rightImg{
+            position:relative;
+            flex-wrap:wrap;
+
+            img{
+                position: absolute;
+                bottom:-10%;
+            }
+        }
+    }
+}
+
+.sofaBackground{
+    background:url(../../images/banner-image.jpg) no-repeat fixed;
+    background-size:cover;
+    height:80vh;
+}
+
+.searchBy{
+    background:$white;
+    text-align:center;
+    @include sectionPadding;
+
 }
