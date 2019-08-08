@@ -1,0 +1,19 @@
+@mixin mqTablet{
+    @media (max-width:768px){
+        @content;
+    }
+}
+
+@mixin paragraphText{
+    font-size:1.8rem;
+    letter-spacing:2px;
+    line-height:32px;
+}
+
+@mixin boxLeft{
+   box-shadow: -10px 10px $yellow; 
+}
+
+@mixin boxRight{
+    box-shadow: -10px 10px $yellow;
+}
