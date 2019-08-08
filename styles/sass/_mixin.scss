@@ -17,3 +17,9 @@
 @mixin boxRight{
     box-shadow: -10px 10px $yellow;
 }
+
+@mixin fillHeading {
+    font-family: $fill;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+}

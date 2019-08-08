@@ -461,7 +461,7 @@ header .titleWrapper h1 {
   letter-spacing: .2rem;
   line-height: 64.5px;
   width: 50%;
-  margin: 0;
+  margin-top: 10%;
 }
 
 .headerCouch {
@@ -477,6 +477,7 @@ header .titleWrapper h1 {
 h2 {
   font-family: "Kumar One", cursive;
   text-transform: uppercase;
+  letter-spacing: 2.1px;
   font-size: 2rem;
   letter-spacing: 2.1px;
 }
@@ -490,6 +491,7 @@ p {
   display: inline-block;
   font-family: "Kumar One", cursive;
   text-transform: uppercase;
+  letter-spacing: 2.1px;
   background: #065635;
   line-height: 32px;
   padding: 20px 30px;
@@ -497,14 +499,14 @@ p {
 
 a {
   color: #f5f5f5;
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 2px;
   text-decoration: none;
 }
 
 .discover {
   background: #f5f5f5;
-  margin: 100px 0px 100px 0px;
+  padding: 100px 0px 100px 0px;
 }
 
 .discover .discoverContainer {
@@ -535,6 +537,7 @@ a {
 }
 
 .picGallery {
+  padding: 100px 0px 100px 0px;
   background: #e0fddf;
 }
 
@@ -542,39 +545,67 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   margin: 0;
   padding: 0;
 }
 
 .picGallery ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 10px;
   list-style: none;
+}
+
+.picGallery ul li:nth-child(2) {
+  margin: 0px 20px 0px 20px;
 }
 
 .communityGallery {
   background: #f5f5f5;
 }
 
+.communityGallery .galleryFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.communityGallery .galleryFlex .communityTextContain {
+  width: 50%;
+  padding: 20px;
+}
+
+.communityGallery .galleryFlex .communityTextContain .iconHeadingContain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.communityGallery .communityTextContain i {
+  color: #151514;
+  background: #f8fb05;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  padding: 15px;
+  margin-right: 20px;
+}
+
+.communityGallery .communityTextContain h3 {
+  font-family: "Kumar One", cursive;
+  text-transform: uppercase;
+  letter-spacing: 2.1px;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.communityGallery .communityTextContain p {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  line-height: 32px;
+  margin-top: 20px;
+}
+
 .readMoreGallery {
   background: #e0fddf;
-}
-
-footer {
-  background: #151514;
-  color: #f5f5f5;
-  padding: 3px;
-}
-
-footer p {
-  text-align: center;
-  letter-spacing: 1.2px;
 }
 
 .headerNavContainer {
