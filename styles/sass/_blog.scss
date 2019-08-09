@@ -1,4 +1,73 @@
-@import "normalize";
-@import "styles";
-@import "nav";
+// @import "normalize";
+// // @import "styles";
+// @import "navFooter";
+// @import "variables";
+// @import "mixin";
 
+
+
+body{
+    font-size:62.5%;
+}
+
+.wrapper {
+    // border:1px solid green;
+	@include wrapperDesktop;
+    @include mqTablet;
+}
+
+.blogPage {
+   background:url(../../images/blog-image.jpg) no-repeat;
+   background-size:cover;
+   background-position:center;
+   height:100vh;
+   margin:0 auto;
+   
+
+   .wrapper{
+       @include wrapperDesktop;
+
+        h1{
+            @include hOne;
+            
+        }
+    }
+}
+
+.blogImgContain{
+    width:100%;
+    
+    img{
+        @include boxRight;
+        
+    }
+
+}
+
+article{
+    width:60%;
+    background: white;
+    color:$black;
+    @include boxRight; 
+    position:relative;
+
+    .blogTextContain{
+        padding:20px 50px 20px 100px;
+
+        h3{
+            font-family: $print;
+            font-size:1.8rem;
+            line-height:1.2rem;
+            font-style: italic;
+            letter-spacing:1.2px;
+        }
+
+        p{
+            font-size:1.8rem;
+            line-height:3rem;
+        }
+    }
+    
+
+    
+}
