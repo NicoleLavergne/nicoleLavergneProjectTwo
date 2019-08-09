@@ -346,12 +346,12 @@ a {
   font-size: 1.8rem;
   letter-spacing: 2px;
   line-height: 32px;
+  padding-left: 70px;
   margin-top: 20px;
 }
 
 .readMoreGallery {
   background: #e0fddf;
-  padding: 0px 50px 50px 0px;
 }
 
 .readMoreGallery .readMoreContain {
@@ -400,9 +400,9 @@ a {
 }
 
 .sofaBackground {
-  background: url(../../images/banner-image.jpg) no-repeat fixed;
+  background: url(../../images/banner-image.jpg) no-repeat bottom fixed;
   background-size: contain;
-  height: 50vh;
+  height: 60vh;
 }
 
 .searchBy {
@@ -443,6 +443,12 @@ body {
   line-height: 64.5px;
 }
 
+.mainFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .blogImgContain {
   width: 100%;
 }
@@ -476,6 +482,44 @@ article .blogTextContain h3 {
 article .blogTextContain p {
   font-size: 1.8rem;
   line-height: 3rem;
+}
+
+aside {
+  background: #f8fb05;
+  width: 30%;
+  height: 100%;
+  margin-left: 20%;
+  margin-top: 20%;
+  -webkit-box-shadow: -10px 10px #f8fb05;
+          box-shadow: -10px 10px #f8fb05;
+}
+
+aside .asideText {
+  padding: 3%;
+}
+
+aside .asideText h3 {
+  font-family: "Kumar One", cursive;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+aside .asideText p {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  line-height: 32px;
+  line-height: 2.5rem;
+}
+
+.recentPostsContain li {
+  font-size: 1.8rem;
+  font-family: "Lato", sans-serif;
+}
+
+.recentPostsContain li a {
+  color: black;
 }
 
 .headerNavContainer {

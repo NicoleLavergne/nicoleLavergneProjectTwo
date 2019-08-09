@@ -34,12 +34,16 @@ body{
     }
 }
 
+.mainFlex{
+    display:flex;
+    
+}
+
 .blogImgContain{
     width:100%;
     
     img{
-        @include boxRight;
-        
+        @include boxRight; 
     }
 
 }
@@ -67,7 +71,46 @@ article{
             line-height:3rem;
         }
     }
-    
+}
 
+aside{
+    background:$yellow;
+    width:30%;
+    height:100%;
+    margin-left:20%;
+    margin-top:20%;
+    @include boxLeft;
+
+    .asideText{
+        padding:3%;
+
+        h3{
+            font-family:$fill;
+            font-size:1.8rem;
+            line-height:2.5rem;
+            letter-spacing:1.2px;
+            text-transform:uppercase;
+        }
+
+        p{
+            @include paragraphText;
+            line-height:2.5rem;
+        }
+    }
     
 }
+
+.recentPostsContain{
+
+    li{
+        font-size:1.8rem;
+        font-family: $print;
+        // list-style-type: circle;
+
+        a{
+            color:black;
+        }
+    }
+
+}
+

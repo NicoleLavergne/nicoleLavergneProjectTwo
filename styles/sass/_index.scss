@@ -155,6 +155,7 @@ p{
 
         p{
             @include paragraphText;
+            padding-left:70px;
             margin-top:20px;
 
         }
@@ -163,7 +164,7 @@ p{
 
 .readMoreGallery{
     background:$ice;
-    padding:0px 50px 50px 0px;
+    // padding:0px 50px 50px 0px;
     
     .readMoreContain{
         display:flex;
@@ -207,10 +208,9 @@ p{
 }
 
 .sofaBackground{
-    background:url(../../images/banner-image.jpg) no-repeat fixed;
+    background:url(../../images/banner-image.jpg) no-repeat bottom fixed;
     background-size:contain;
-    height:50vh;
-    
+    height:60vh;
 }
 
 .searchBy{
