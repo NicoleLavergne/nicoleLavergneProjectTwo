@@ -31,12 +31,23 @@
     
     <main>
 
-        <form action="">
-            <input type="text" name="name" placeholder="name">
-            <input type="email" name="email" placeholder="email">
+        <form action="" class="postForm white">
+            <fieldset>
+                <div class="nameEmailContain">
+                    <label for="name"></label>
+                    <input type="text" name="name" class="name" placeholder="name">
         
-            <input type="text" name="textBox" placeholder="comment">
-            <input type="submit" name="postComment" value="Post Comment">
+                    <label for="email"></label>
+                    <input type="email" name="email" class="email" placeholder="email address">
+                </div>
+                <div class="textSubmitContain">
+                    <label for="textBox"></label>
+                    <input type="text" name="textBox" class="textBox" placeholder="message">
+        
+                    <label for="postComment">Click to submit</label>
+                    <input type="submit" name="postComment" class="submit" value="Submit">
+                </div>
+            </fieldset>
         </form>
 
         <section class="socialNav">

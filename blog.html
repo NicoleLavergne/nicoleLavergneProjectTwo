@@ -80,28 +80,50 @@
             </div>
 
         <section class="commentsContain">
-            <h3>Comments:</h3>
-            <div>
-                <div class="individualCommentContain">
-                    <img src="images/comment-image.jpg" alt="">
-                    <p class="date">Tuesday December 23rd, 2019 by Keith</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A neque, ex eveniet mollitia at aliquam, excepturi laudantium amet nihil dolore eum eaque obcaecati. Repellat reprehenderit ut aspernatur expedita a earum eos, nihil doloribus quidem ad voluptates sit veniam quia rem!</p>
+            <div class="comments">
+                <h3>Comments:</h3>
+                <div class="postContain">
+                    <div class="commentImg">
+                        <img src="images/comment-image.jpg" alt="">
+                    </div>
+                    <div class="commentText">
+                        <p class="date">Tuesday December 23rd, 2019 by Keith</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A neque, ex eveniet mollitia at aliquam, excepturi laudantium amet nihil dolore eum eaque obcaecati. Doloribus quidem ad quia rem!</p>
+                    </div>
                 </div>
-            
-                <div class="individualCommentContain">
-                    <img src="images/comment-image2.jpg" alt="">
-                    <p class="date">Wednesday October 11th, 2019 by Leanne</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A neque, ex eveniet mollitia at aliquam, excepturi ntium amet nihil dolore eum eaque obcaecati. Repellat reprehenderit ut aspernatur expedita a earum! </p>
+                <div class="postContain">
+                    <div class="commentImg">
+                        <img src="images/comment-image2.jpg" alt="">
+                    </div>
+                    <div class="commentText">
+                        <p class="date">Wednesday October 11th, 2019 by Leanne</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A neque, ex eveniet mollitia at aliquam, excepturi
+                            laudantium amet nihil dolore eum eaque obcaecati. Doloribus quidem ad quia rem!</p>
+                    </div>
                 </div>
             </div>
-        </section>
 
-            <form action="">
-                <input type="text" name="name" placeholder="name">
-                <input type="email" name="email" placeholder="email">
-                
-                <input type="text" name="textBox" placeholder="comment">
-                <input type="submit" name="postComment" value="Post Comment">
+            
+            </div>
+            </section>
+            
+            <form action="" class="postForm">
+                <fieldset>
+                    <div class="nameEmailContain">
+                        <label for="name"></label>
+                        <input type="text" name="name" class="name" placeholder="name">
+                        
+                        <label for="email"></label>
+                        <input type="email" name="email" class="email" placeholder="email address">
+                    </div>
+                    <div class="textSubmitContain">
+                        <label for="textBox"></label>
+                        <input type="text" name="textBox" class="textBox" placeholder="comment">
+                        
+                        <label for="postComment">Click to post comment</label>
+                        <input type="submit" name="postComment" class="submit" value="Post Comment">
+                    </div>
+                </fieldset>
             </form>
     </main>
 

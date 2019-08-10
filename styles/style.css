@@ -411,6 +411,176 @@ a {
   padding: 100px 0px 100px 0px;
 }
 
+.postForm {
+  padding: 2%;
+  width: 50%;
+  margin-left: 5%;
+  margin-bottom: 50px;
+  font-size: 1.8rem;
+}
+
+main {
+  position: relative;
+}
+
+main .white {
+  width: 70%;
+  background: white;
+  position: absolute;
+  top: -30%;
+  -webkit-box-shadow: 10px 10px #f8fb05;
+          box-shadow: 10px 10px #f8fb05;
+}
+
+.nameEmailContain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nameEmailContain .name {
+  width: calc(50% - 10px);
+  margin-right: 10px;
+  border-bottom: 3px solid #065635;
+}
+
+.nameEmailContain .email {
+  width: 50%;
+  border-bottom: 3px solid #065635;
+}
+
+input {
+  padding: 10px 30px;
+  border: none;
+  background: none;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+.textSubmitContain {
+  display: float;
+}
+
+.textSubmitContain .textBox {
+  margin: 40px 0px 20px 0px;
+  width: 100%;
+  height: 300px;
+  border: 3px solid #065635;
+}
+
+.textSubmitContain .textBox::-webkit-input-placeholder {
+  color: black;
+}
+
+.textSubmitContain .textBox:-ms-input-placeholder {
+  color: black;
+}
+
+.textSubmitContain .textBox::-ms-input-placeholder {
+  color: black;
+}
+
+.textSubmitContain .textBox::placeholder {
+  color: black;
+}
+
+.textSubmitContain label {
+  opacity: 0;
+}
+
+.submit {
+  width: 100%;
+  background: #065635;
+  color: white;
+  font-family: "Kumar One", cursive;
+  letter-spacing: .2rem;
+}
+
+.postForm {
+  padding: 2%;
+  width: 50%;
+  margin-left: 5%;
+  margin-bottom: 50px;
+  font-size: 1.8rem;
+}
+
+main {
+  position: relative;
+}
+
+main .white {
+  width: 70%;
+  background: white;
+  position: absolute;
+  top: -30%;
+  -webkit-box-shadow: 10px 10px #f8fb05;
+          box-shadow: 10px 10px #f8fb05;
+}
+
+.nameEmailContain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nameEmailContain .name {
+  width: calc(50% - 10px);
+  margin-right: 10px;
+  border-bottom: 3px solid #065635;
+}
+
+.nameEmailContain .email {
+  width: 50%;
+  border-bottom: 3px solid #065635;
+}
+
+input {
+  padding: 10px 30px;
+  border: none;
+  background: none;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+.textSubmitContain {
+  display: float;
+}
+
+.textSubmitContain .textBox {
+  margin: 40px 0px 20px 0px;
+  width: 100%;
+  height: 300px;
+  border: 3px solid #065635;
+}
+
+.textSubmitContain .textBox::-webkit-input-placeholder {
+  color: black;
+}
+
+.textSubmitContain .textBox:-ms-input-placeholder {
+  color: black;
+}
+
+.textSubmitContain .textBox::-ms-input-placeholder {
+  color: black;
+}
+
+.textSubmitContain .textBox::placeholder {
+  color: black;
+}
+
+.textSubmitContain label {
+  opacity: 0;
+}
+
+.submit {
+  width: 100%;
+  background: #065635;
+  color: white;
+  font-family: "Kumar One", cursive;
+  letter-spacing: .2rem;
+}
+
 body {
   font-size: 62.5%;
 }
@@ -520,6 +690,61 @@ aside .asideText p {
 
 .recentPostsContain li a {
   color: black;
+}
+
+.commentsContain {
+  width: 60%;
+}
+
+.commentsContain .comments {
+  padding-left: 100px;
+}
+
+.commentsContain h3 {
+  font-family: "Kumar One", cursive;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 2rem;
+  letter-spacing: 2px;
+}
+
+.commentsContain .date {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.postContain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.postContain .commentImg {
+  width: 15%;
+  display: block;
+}
+
+.postContain .commentText {
+  width: 70%;
+  margin-left: 5%;
+}
+
+.postContain .commentText p {
+  line-height: 2.5rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socailNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .headerNavContainer {

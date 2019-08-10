@@ -1,9 +1,4 @@
-// @import "normalize";
-// // @import "styles";
-// @import "navFooter";
-// @import "variables";
-// @import "mixin";
-
+@import "form";
 
 
 body{
@@ -114,3 +109,59 @@ aside{
 
 }
 
+.commentsContain{
+    width:60%;
+
+    .comments{
+        padding-left:100px;
+
+    }
+
+    h3{
+        font-family:$fill;
+        font-size:2rem;
+        text-transform:uppercase;
+        line-height:2rem;
+        letter-spacing: 2px;
+    }
+
+    .date{
+        text-transform:uppercase;
+        letter-spacing: 2px;
+        font-size:1.8rem;
+        margin:0;
+    }
+    
+}
+
+.postContain{
+    display:flex;
+
+    .commentImg{
+        width:15%;
+        display:block;
+    }
+
+    .commentText{
+        width:70%;
+        margin-left:5%;
+
+        p{
+            line-height: 2.5rem;
+        }
+    }
+
+}
+// .postForm{
+
+//     margin-bottom:1000px; 
+
+//     fieldset{
+//         opacity:0;
+//         border:2px solid purple;
+//     }
+//     .name{
+//         border-bottom: 1px solid black;
+//     }
+
+// }
