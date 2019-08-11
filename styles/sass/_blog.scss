@@ -1,6 +1,5 @@
 @import "form";
 
-
 body{
     font-size:62.5%;
 }
@@ -18,7 +17,6 @@ body{
    height:100vh;
    margin:0 auto;
    
-
    .wrapper{
        @include wrapperDesktop;
 
@@ -30,8 +28,7 @@ body{
 }
 
 .mainFlex{
-    display:flex;
-    
+    display:flex;  
 }
 
 .blogImgContain{
@@ -40,7 +37,6 @@ body{
     img{
         @include boxRight; 
     }
-
 }
 
 article{
@@ -91,8 +87,7 @@ aside{
             @include paragraphText;
             line-height:2.5rem;
         }
-    }
-    
+    }  
 }
 
 .recentPostsContain{
@@ -106,7 +101,6 @@ aside{
             color:black;
         }
     }
-
 }
 
 .commentsContain{
@@ -131,7 +125,6 @@ aside{
         font-size:1.8rem;
         margin:0;
     }
-    
 }
 
 .postContain{
@@ -150,18 +143,4 @@ aside{
             line-height: 2.5rem;
         }
     }
-
 }
-// .postForm{
-
-//     margin-bottom:1000px; 
-
-//     fieldset{
-//         opacity:0;
-//         border:2px solid purple;
-//     }
-//     .name{
-//         border-bottom: 1px solid black;
-//     }
-
-// }

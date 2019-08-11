@@ -735,6 +735,14 @@ aside .asideText p {
   line-height: 2.5rem;
 }
 
+.contactHeader {
+  background: url(../../images/contact-image.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0 auto;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
