@@ -14,8 +14,8 @@
 }
 
 .contactMain{
-   margin-bottom:15%;
    display:flex;
+   margin-bottom:15%;
    flex-direction: row;
    justify-content: space-between;
    // border:2px solid blue;
@@ -23,11 +23,11 @@
 
 .socialContain{
    margin-top:10%;
+   margin-left:10%;
    width:25%;
 }
 .socialNav{
-   // border:3px solid green;
-   
+  
    ul{
       display:flex;
       justify-content: space-around;

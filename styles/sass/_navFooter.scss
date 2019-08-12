@@ -48,6 +48,10 @@ li{
     &:hover a{
     border-bottom:3px solid $yellow;
     }
+
+    &:active a{
+        border-bottom:3px solid $green;
+    }
 }
 
 
