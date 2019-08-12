@@ -1,4 +1,4 @@
-// @import "normalize";
+
 
 .headerNavContainer{
     width:100%;
@@ -7,7 +7,7 @@
     top:0;
     right:0;
     transition: top .3s;
-    // transition
+
 }
 
 
@@ -33,7 +33,7 @@
     justify-content: flex-end;
 
     ul{
-        border:1px solid purple;
+        // border:1px solid purple;
         display:flex;
         justify-content: flex-end;
         flex-direction:row;
@@ -46,9 +46,10 @@ li{
     margin:10px;
 
     &:hover a{
-    border-bottom:2px solid black;
+    border-bottom:3px solid $yellow;
     }
 }
+
 
     a{
         font-size:1.8rem;
@@ -66,6 +67,7 @@ footer{
     background: $black;
     color:$white;
     padding:3px;
+
 
     p{
        text-align: center;

@@ -1,8 +1,3 @@
-// @import "normalize";
-// @import "mixin";
-// @import "variables";
-// @import "navFooter";
-// @import "blog";
 
 
 body{
@@ -10,13 +5,11 @@ body{
     background-color:$ice;
 } 
 
-.wrapper {
-    // border:1px solid green;
-	@include wrapperDesktop;
-    @include mqTablet;
-
+.wrapper{
+       @include wrapperDesktop;
+    //    border:1px solid red;
+  
 }
-
 header{
     background:url(../../images/header-home.jpg)no-repeat;
     background-size:cover;
@@ -25,19 +18,16 @@ header{
     position:relative;
     background-position: center;
 
-    .wrapper{
-       @include wrapperDesktop;
-  
+    
         h1 {
             @include hOne;
             width:50%;
             padding-top:10%;
         }
     }
-}
+
 
 .headerCouch{
-    // border:1px solid brown;
     width:50%;
     position: absolute;
     bottom:-10%;
@@ -76,6 +66,7 @@ p{
     background:$white;
     @include sectionPadding;
 
+
     .discoverContainer{
         display:flex;
         flex-direction: row;
@@ -96,7 +87,6 @@ p{
             }
         }
     }
-
 }
 
 .picGallery{

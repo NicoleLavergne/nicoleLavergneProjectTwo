@@ -14,7 +14,7 @@
     
     <header class="contactHeader">
         <div class="wrapper">
-            <h1>Get in Touch</h1>
+            <h1 class="touch">Get in Touch</h1>
         </div>
         <div class="headerNavContainer">
             <p>Sanctuary Helpers</p>
@@ -29,56 +29,65 @@
         </div>
     </header>
     
-    <main>
+    <main class="wrapper contactMain">
+        <div class="formContain">
+            <form action="" class="postForm white">
+                <fieldset>
+                    <div class="nameEmailContain">
+                        <label for="name"></label>
+                        <input type="text" name="name" class="name" placeholder="name">
+                        
+                        <label for="email"></label>
+                        <input type="email" name="email" class="email" placeholder="email address">
+                    </div>
+                    <div class="textSubmitContain">
+                        <label for="textBox"></label>
+                        <input type="text" name="textBox" class="textBox" placeholder="message">
+                        
+                        <label for="postComment">Click to submit</label>
+                        <input type="submit" name="postComment" class="submit" value="Submit">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    
+        <section class="socialContain">
+            <div class="socialNav">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href=""><i class="fab fa-facebook-f aria-hidden" aria-label="Go to our Facebook page"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-instagram aria-hidden" aria-label="Go to our Instagram page"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-twitter aria-hidden" aria-label="Go to our Twitter page"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-whatsapp aria-hidden" aria-label="Contact us on What's App"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
-        <form action="" class="postForm white">
-            <fieldset>
-                <div class="nameEmailContain">
-                    <label for="name"></label>
-                    <input type="text" name="name" class="name" placeholder="name">
-        
-                    <label for="email"></label>
-                    <input type="email" name="email" class="email" placeholder="email address">
-                </div>
-                <div class="textSubmitContain">
-                    <label for="textBox"></label>
-                    <input type="text" name="textBox" class="textBox" placeholder="message">
-        
-                    <label for="postComment">Click to submit</label>
-                    <input type="submit" name="postComment" class="submit" value="Submit">
-                </div>
-            </fieldset>
-        </form>
-
-        <section class="socialNav">
-            <nav>
-                <ul>
-                    <li>
-                        <a href=""><i class="fab fa-facebook-f aria-hidden" aria-label="Go to our Facebook page"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fab fa-instagram aria-hidden" aria-label="Go to our Instagram page"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fab fa-twitter aria-hidden" aria-label="Go to our Twitter page"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fab fa-whatsapp aria-hidden" aria-label="Contact us on What's App"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="contactText">
+                <p class="email">info@email.com</p>
+                <p>123-456-7890</p>
+                <p>123 Queen Street West,</p>
+                <p>Unit 10</p>
+                <p>Toront, Ontario</p>
+                <p>M5V 2D5</p>
+            </div>
         </section>
 
-        <div>
-            <p class="email">info@email.com</p>
-            <p>123-456-7890</p>
-            <p>123 Queen Street West, Unit 10 Toronto Ontario M5V 2D5</p>
-            
-        </div>
     </main>
 
+    <footer>
+        <p>Copyright &copy 2019 HackerYou</p>
+    </footer>
 
     
 </body>
