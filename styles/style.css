@@ -226,20 +226,30 @@ p {
 }
 
 .greenButton {
+  color: #f5f5f5;
   display: inline-block;
   font-family: "Kumar One", cursive;
   text-transform: uppercase;
   letter-spacing: 2.1px;
   background: #065635;
+  font-size: 1.6rem;
   line-height: 32px;
+  letter-spacing: 2px;
   padding: 20px 30px;
+  border: 2px solid transparent;
+  text-decoration: none;
 }
 
-a {
-  color: #f5f5f5;
-  font-size: 1.8rem;
-  letter-spacing: 2px;
-  text-decoration: none;
+.greenButton:hover {
+  color: #065635;
+  background: #f5f5f5;
+  border: 2px solid #065635;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.greenButton:active {
+  background: #e0fddf;
 }
 
 .discover {
@@ -295,6 +305,10 @@ a {
   margin: 0px 20px 0px 20px;
 }
 
+.picGallery ul li.hideImg {
+  display: none;
+}
+
 .communityGallery {
   background: #f5f5f5;
   padding: 100px 0px 100px 0px;
@@ -323,9 +337,10 @@ a {
   color: #151514;
   background: #f8fb05;
   border-radius: 50%;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 15px;
   margin-right: 20px;
+  border: 2px solid #f8fb05;
 }
 
 .communityGallery .communityTextContain h3 {
@@ -342,6 +357,16 @@ a {
   line-height: 32px;
   padding-left: 70px;
   margin-top: 20px;
+}
+
+.communityTextContain:hover i {
+  border: 2px solid #065635;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.communityTextContain:active i {
+  background: #f5f5f5;
 }
 
 .readMoreGallery {
@@ -396,7 +421,11 @@ a {
 .sofaBackground {
   background: url(../../images/banner-image.jpg) no-repeat bottom fixed;
   background-size: contain;
-  height: 60vh;
+  height: 40vh;
+}
+
+.sofaBackground .bottomBackImg {
+  display: none;
 }
 
 .searchBy {
@@ -405,9 +434,135 @@ a {
   padding: 100px 0px 100px 0px;
 }
 
+/* --------------- Portrait tablet and small desktops --------------- */
+@media (max-width: 940px) {
+  .wrapper {
+    max-width: 850px;
+    width: 90%;
+  }
+  .communityTextContain {
+    padding: 5px;
+  }
+}
+
+/* ------------- Landscape phone to portrait table ------------- */
+@media (max-width: 770px) {
+  body {
+    font-size: 50%;
+  }
+  header {
+    background: url(../../images/header-home.jpg) no-repeat;
+    background-size: cover;
+    height: 60vh;
+    margin: 0;
+    position: relative;
+    background-position: center;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  .discover .discoverContainer {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  .discover .discoverContainer .discoverTextContain {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+  .discover .discoverContainer .discoverImg {
+    display: none;
+  }
+  .discover .discoverContainer .discoverImg img {
+    -webkit-box-shadow: -20px 20px #f8fb05;
+            box-shadow: -20px 20px #f8fb05;
+  }
+  .picGallery ul {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  .picGallery ul li {
+    margin: 0;
+  }
+  .picGallery li.hideImg {
+    display: block;
+  }
+  .communityGallery .galleryFlex .communityTextContain {
+    width: 80%;
+    padding: 5%;
+    text-align: left;
+    margin: 15px;
+    border-bottom: 1px solid green;
+  }
+  .communityGallery .galleryFlex .communityTextContain .iconHeadingContain {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  .readMoreGallery .readMoreContain .readMoreText {
+    width: 100%;
+    padding: 10%;
+    text-align: center;
+  }
+  .readMoreGallery .readMoreContain .readMoreImg {
+    display: none;
+  }
+  .searchBy {
+    padding: 20px;
+  }
+  .sofaBackground {
+    background: none;
+    height: 100%;
+  }
+  .sofaBackground .bottomBackImg {
+    display: block;
+  }
+}
+
+/* ---------------- Landscape phones and down ---------------- */
+@media (max-width: 480px) {
+  .wrapper {
+    max-width: 380px;
+    width: 80%;
+  }
+  body {
+    font-size: 40%;
+  }
+  .headerCouch {
+    width: 70%;
+  }
+  .greenButton {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+    padding: 14px 20px;
+    border-radius: 5px;
+  }
+}
+
+/* ---------------- iPhone 5/SE & Other small phones ---------------- */
+@media (max-width: 320px) {
+  body {
+    font-size: 30%;
+  }
+  .wrapper {
+    max-width: 290px;
+  }
+}
+
 .postForm {
   margin-left: 100px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .formContain {
@@ -583,6 +738,8 @@ body {
 
 .blogForm {
   width: 60%;
+  position: relative;
+  top: -50px;
 }
 
 .articleContain {
@@ -801,6 +958,7 @@ aside .asideText p {
 }
 
 .headerNavContainer nav ul {
+  margin-right: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -830,7 +988,8 @@ aside .asideText p {
 }
 
 .headerNavContainer nav a {
-  font-size: 1.8rem;
+  padding: 10px 5px;
+  font-size: 1.6rem;
   text-decoration: none;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;

@@ -33,7 +33,7 @@
     justify-content: flex-end;
 
     ul{
-        // border:1px solid purple;
+        margin-right:50px;
         display:flex;
         justify-content: flex-end;
         flex-direction:row;
@@ -42,11 +42,11 @@
     }
 
 li{
-    justify-content: space-around;
+    justify-content:space-around;
     margin:10px;
 
     &:hover a{
-    border-bottom:3px solid $yellow;
+        border-bottom:3px solid $yellow;
     }
 
     &:active a{
@@ -56,7 +56,8 @@ li{
 
 
     a{
-        font-size:1.8rem;
+        padding:10px 5px;
+        font-size:1.6rem;
         text-decoration: none;
         font-family: $print;
         text-transform:uppercase;

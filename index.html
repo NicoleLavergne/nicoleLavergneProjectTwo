@@ -27,7 +27,7 @@
                 <input type="checkbox" id="hamburger" />
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href=""><a>About</li>
+                    <li><a href="#about"><a>About</li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -41,9 +41,8 @@
                 <div class="discoverTextContain">
                     <h2>Discovering New Material</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque libero adipisci molestiae, expedita quia repellat illum, eaque laborum debitis esse obcaecati vero dolorum rerum magni quam nesciunt assumenda ea! Error eveniet animi alias aliquam eius unde ipsum perferendis ex quaerat nulla. A, nemo? Reiciendis doloribus dolores itaque debitis? Incidunt, eos?</p>
-                    <div class="greenButton">
-                        <a href="">Find out more</a>
-                    </div>
+                        <a class="greenButton" href="">Find out more</a>
+                    
                 </div>
                 <div class="discoverImg">
                     <img src="images/small-box.jpg" alt="A comfy,mauve couch with cream pillows, in a living room">
@@ -54,6 +53,8 @@
         <section class="picGallery">
             <div class="wrapper">
                 <ul>
+                <!-- i changed this lower div from a ul -->
+                <!-- <div class="flickContainer" data-flickity='{"autoPlay":4000 }'> -->
                     <li>
                         <img src="images/gallery-image-1.jpg" alt="A royal green side table with an orange vase holding decorative wheat" class="flickImg">
                     </li>
@@ -63,11 +64,22 @@
                     <li>
                         <img src="images/gallery-image-3.jpg" alt="A black wire patio chair" class="flickImg">
                     </li>
+                    <li class="hideImg">
+                        <img src="images/small-box.jpg" alt="A comfy,mauve couch with cream pillows, in a living room">
+                    </li>
+                    <li class="hideImg">
+                        <img src="images/left-image.jpg"
+                        alt="Two white, modern and geometric chairs infront of a wood table, bonsai tree on table">
+                    </li>
+                    <li class="hideImg">
+                        <img src="images/right-image.jpg" alt="two Wick chairs and Wick side table">
+                    </li>
                 </ul>
+                <div>
             </div>
         </section>
 
-        <section class="communityGallery">
+        <section class="communityGallery" id="about">
             <div class=" galleryFlex wrapper">
                 <div class="communityTextContain">
                     <div class="iconHeadingContain">
@@ -116,36 +128,35 @@
                     <div class="readMoreText">
                         <h2>Group Programs</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eligendi mollitia ea, adipisci dolores amet, beatae culpa aliquam nulla unde at maxime ipsum suscipit quae facilis soluta deserunt aut vel.</p>
-                        <div class="greenButton">
-                            <a href="">Read more</a>
-                        </div>
+                        <a href="" class="greenButton">Read more</a>
+                       
                     </div>
                     <div class="readMoreText rightText">
                         <h2>New Locations</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eligendi mollitia ea, adipisci dolores
                         amet, beatae culpa aliquam nulla unde at maxime ipsum suscipit quae facilis soluta deserunt aut vel.</p>
-                        <div class="greenButton">
-                            <a href="">Read more</a>
-                        </div>
+                            <a href="" class="greenButton">Read more</a>
+                        
                     </div>
                     <div class="readMoreImg rightImg">
                         <img src="images/right-image.jpg"
-                        alt="Two white, modern and geometric chairs infront of a wood table, bonsai tree on table">
+                        alt="two Wick chairs and Wick side table">
                     </div>
                 </div>
         </section>
 
         <div class="sofaBackground">
-            <!-- <img src="images/banner-image.jpg" alt="Two pink swivel chairs, a glass and wood coffee table and burnt orange sofa"> -->
+            <img src="images/banner-image.jpg" class="bottomBackImg" alt="Brown leather couch inbetween two pink velvet swivel chairs.">
+
         </div>
 
         <section class="searchBy">
             <div class="wrapper">
                 <h2>Search by style</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat natus quod reprehenderit maxime! Dolore nostrum, nemo natus, labore laudantium provident dolor facere soluta inventore eius necessitatibus eveniet, deserunt molestias reiciendis rem et! Quisquam, provident! Minima molestiae dolor molestias. Sequi praesentium natus asperiam facere repudiandae exercitationem ullam quisquam placeat aepe placeat praesentium fugit inventore quisquam ea, in voluptates. Sed est dignissimos consequatur alias ad eaque non incidunt eos quos!</p>
-                <div class="greenButton">
-                    <a href="">Find out More</a>
-                </div>
+                
+                    <a href="" class="greenButton">Find out More</a>
+               
             </div>
         </section>
        
@@ -155,5 +166,9 @@
                 <p>Copyright &copy 2019 HackerYou</p>
             </footer>
     
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="js/script.js"></script> -->
+
 </body>
 </html>
