@@ -1,4 +1,3 @@
-// @import "form";
 
 body{
     font-size:62.5%;
@@ -11,7 +10,6 @@ body{
    height:80vh;
    margin:0 auto;
    
-   
    .wrapper{
     max-width:1280px;
 	width:80%;
@@ -19,7 +17,7 @@ body{
 
         h1{
             @include hOne;
-            
+            margin-top:0;
         }
     }
 }
@@ -27,23 +25,20 @@ body{
 
 .mainFlex{
     display:flex;
-    
 }
 
-    .blogForm{
-        width:65%;
-        position:relative;
-        top:-50px;
-    
-    }
-    .articleContain{
-        width:100%;
-        background: white;
-        margin-bottom:100px;
-        // @include boxRight; 
-        box-shadow:inset -10px -10px $yellow;
-        // border-right:20px solid $yellow;
-    }
+.blogForm{
+    width:65%;
+    position:relative;
+    top:-50px;
+}
+
+.articleContain{
+    width:100%;
+    background: white;
+    margin-bottom:100px;
+    @include boxRight;
+}
 
 .blogImgContain{
     width:100%;
@@ -54,7 +49,6 @@ body{
 }
 
 article{
- 
     color:$black;
     position:relative;
 
@@ -229,7 +223,7 @@ Landscape phones and down ---------------- */
             margin:0 auto;
             box-shadow:none;
             margin:0;
-
+        
             .asideImgContain{
                 width:50%;
                 margin:0 auto;

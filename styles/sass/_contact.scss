@@ -1,5 +1,6 @@
 .touch{
    width:100%;
+   margin:0;
    padding-top:20%;
 }
 
@@ -18,7 +19,6 @@
    margin-bottom:15%;
    flex-direction: row;
    justify-content: space-between;
-   // border:2px solid blue;
 }
 
 .socialContain{
@@ -43,80 +43,145 @@
             font-size:2rem;
             padding:10px;
          }
+
+         i{
+            padding:30px;
+            border-radius:50%;
+         }
+
+         a:hover i{
+            background:$green;
+            color:$white;
+            transition:.3s;
+
+         }
       }
    }
 }
 
 .contactText{
    font-size:1.8;
+   font-family: $print;
 
    p{
       margin:3%;
+   }
 
+   a{
+      text-decoration: none;
+      color:$black;
+   }
+
+   .email{
+      border-bottom:1px solid transparent;
+   }
+
+   a:hover p{
+      background-color:$ice;
+      border-bottom:1px solid $green;
    }
 }
 
 @media
 (max-width: 940px) { 
 
+html{
+   font-size:55%;
+}
+
+.contactMain{
+      display:flex;
+      margin-bottom:0;
+      flex-direction:column;
+}
 .contactHeader{
+
    h1{
       font-size:4.5rem;
-      
    }
 }
-   .contactMain{
-   display:flex;
-   flex-direction: column-reverse;
-   }
 
-   .contactText{
-      p{
-         font-size:3rem;
-      }
+.contactText{
+
+   margin:100%;
+   p{
+      font-size:3rem;
+      text-align:center;
    }
+}
+
    .socialContain{
-      padding:50px;
-      margin:0 auto;
-      text-align: center;
-      width:50%;
+      width:80%;
+      display:block;
+      // padding-top:50%;
+      margin:30px auto;
+      // text-align: center;
    }
 
    .socialContain:focus, .socialContain:hover{
       background:$white;
    }
+
     .socialNav{
-      ul li{
-         margin:2%;
-   
-         a{
-            color:$black;
-            font-size:4rem;
-            padding:10px;
+         ul li {
+            margin:10px;
+
+            a{
+               color:$black;
+               font-size:4rem;
+               padding:10px;
+         
+            }
          }
+         
       } 
-   }
+}
 
 
-} 
 
-@media(max-width: 768px) { 
+@media(max-width: 768px){ 
+  
    .socialContain{
-      padding:10px;
-      width:80%;
+      padding:50px;
+      width:50%;
+      display:block;
+      margin:20 auto;
    }
+
 } /* ---------------- Landscape phones and down ---------------- */
 
 @media
 (max-width: 480px) {
 
-
    .socialContain{
-      padding:30px;
-      width:90%;
+      padding:10px;
+      width:80%;
    }
    
+  .socialNav{
+  
+   ul{
    
+      li{
+         margin:5px;
+   
+         a{
+            font-size:3rem;
+            padding:10px;
+         }
+
+         i{
+            padding:10px;
+         }
+      }
+   }
+}
+   .contactText{
+   p{
+      font-size:2rem;
+      text-align:center;
+   }
+}
  } /* ---------------- iPhone 5/SE & Other small phones ---------------- */
 @media
 (max-width: 320px) {

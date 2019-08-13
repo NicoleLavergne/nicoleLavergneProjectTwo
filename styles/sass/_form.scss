@@ -13,7 +13,7 @@
         background:white;
         position:absolute;
         top:-20%;
-        padding:5%;
+        padding:3%;
        @include boxRight;
     }  
 }
@@ -94,4 +94,25 @@ input{
 
         }
 
-        
+@media
+(max-width: 768px) {
+
+    .postForm{
+    margin-left:0;
+    font-size: 1.6rem;
+}
+
+    .formContain{
+        width:100%;
+        margin:0 auto;
+        // border:3px solid rgb(250, 0, 42);
+    }
+
+        .formContain{
+
+            .white{
+            width: 100%;
+            // border:4px solid red;
+        }
+    }
+} 
