@@ -1075,6 +1075,66 @@ Landscape phones and down ---------------- */
   margin: 3%;
 }
 
+@media (max-width: 940px) {
+  .contactHeader h1 {
+    font-size: 4.5rem;
+  }
+  .contactMain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contactText p {
+    font-size: 3rem;
+  }
+  .socialContain {
+    padding: 50px;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+  }
+  .socialContain:focus, .socialContain:hover {
+    background: #f5f5f5;
+  }
+  .socialNav ul li {
+    margin: 2%;
+  }
+  .socialNav ul li a {
+    color: #151514;
+    font-size: 4rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .socialContain {
+    padding: 10px;
+    width: 80%;
+  }
+}
+
+/* ---------------- Landscape phones and down ---------------- */
+@media (max-width: 480px) {
+  .socialContain {
+    padding: 30px;
+    width: 90%;
+  }
+}
+
+/* ---------------- iPhone 5/SE & Other small phones ---------------- */
+@media (max-width: 320px) {
+  html {
+    font-size: 45%;
+  }
+  .socialContain {
+    padding: 10px;
+  }
+}
+
 .headerNavContainer {
   width: 100%;
   position: absolute;
