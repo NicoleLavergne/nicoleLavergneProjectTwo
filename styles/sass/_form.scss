@@ -22,13 +22,13 @@
     display:flex;
        
     .name {
-        width:calc(50% - 10px);
+        width:calc(40% - 10px);
         margin-right:10px;
         border-bottom: 2px solid $green;
     }
 
     .email{
-        width:50%;
+        width:60%;
             border-bottom: 2px solid $green;
     }
 
@@ -43,7 +43,7 @@ input{
     border:none;
     background:none;
     font-family: $print;
-    padding:10px 30px;
+    padding:10px 30px 10px 10px;
 }
 
 .textSubmitContain{

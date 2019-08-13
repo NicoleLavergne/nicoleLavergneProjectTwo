@@ -57,6 +57,7 @@ p{
     padding:20px 30px;
     border:2px solid transparent;
     text-decoration: none;
+    border-radius:2%;
 }
 
     .greenButton:hover{
@@ -210,7 +211,6 @@ p{
 
         .leftImg{
             position:relative;
-
             img{
                 position:absolute;
                 top:-10%;
@@ -251,12 +251,17 @@ p{
 /* --------------- Portrait tablet and small desktops --------------- */
 @media
 (max-width: 940px) {
+    
+    html{
+        font-size:90%;
 
+        }
     .wrapper{
         max-width:850px;
         width:90%;
     }
 
+    
         .communityTextContain{
             padding:5px;
     }
@@ -265,23 +270,26 @@ p{
 /* ------------- Landscape phone to portrait table ------------- */
 @media
 (max-width: 770px) { 
-
-    body{
-        font-size:50%;
-    }
-    header{
-    background:url(../../images/header-home.jpg)no-repeat;
-    background-size:cover;
-    height: 60vh;
-    margin:0;
-    position:relative;
-    background-position: center;
     
-    h1{
-        font-size:2rem;
-        
+    .wrapper{
+        max-width:700px;
+        width:90%;
+    
     }
-}
+
+    html{
+        font-size:80%;
+    }
+    
+    header{
+        height: 60vh;
+    
+        h1{
+            font-size:2rem;
+            
+        }
+    }
+
 .discover{
 
     .discoverContainer{
@@ -362,9 +370,12 @@ p{
         }
     }
 
-    .searchBy{
-    padding:20px;
+    .greenButton{
+        padding:10px 25px;
+}
 
+    .searchBy{
+        padding:50px;
     }
 
     .sofaBackground{
@@ -411,6 +422,7 @@ p{
     html{
         font-size:50%;
     }
+
     .wrapper{
         max-width:290px;
         width:70%;
