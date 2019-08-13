@@ -40,7 +40,9 @@ body{
         width:100%;
         background: white;
         margin-bottom:100px;
-        @include boxRight; 
+        // @include boxRight; 
+        box-shadow:inset -10px -10px $yellow;
+        // border-right:20px solid $yellow;
     }
 
 .blogImgContain{
