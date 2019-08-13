@@ -1,5 +1,17 @@
 
+ input[type="checkbox"]:checked + ul {
+        left:0;
 
+    }
+
+    label{
+        display:none;
+    }
+
+    input[type="checkbox"]{
+        display: none;
+    }
+    
 .headerNavContainer{
     width:100%;
     position:absolute;
@@ -12,7 +24,6 @@
 
 
 .headerNavContainer nav{
-    background-color:#dfe2fd;
     padding:5px;
 }
 
@@ -86,6 +97,11 @@ footer{
 @media
 (max-width: 768px) { 
 
+
+label{
+    display:block;
+}
+
 .headerNavContainer p{
     display:block;
     margin-left:10px;
@@ -138,11 +154,11 @@ footer{
             margin-left:0;
             
             &:hover a{
-                border-bottom:3px solid $yellow;
+                border-bottom:2px solid $yellow;
             }
             
             &:active a{
-                border-bottom:3px solid $green;
+                border-bottom:2px solid $green;
             }
         }
 
@@ -158,6 +174,11 @@ footer{
 
         }
 
+        label:hover{
+            font-size:10rem;
+            transition:.5s;
+        }
+
     }
 
     input[type="checkbox"]:checked + ul {
@@ -165,8 +186,5 @@ footer{
 
     }
 
-    input[type="checkbox"]{
-        display: none;
-    }
-    
+
 }

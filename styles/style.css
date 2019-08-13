@@ -217,7 +217,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 2.1px;
   font-size: 2rem;
-  letter-spacing: 2.1px;
+  letter-spacing: .2rem;
 }
 
 p {
@@ -233,9 +233,9 @@ p {
   letter-spacing: 2.1px;
   background: #065635;
   font-size: 1.6rem;
-  line-height: 32px;
-  letter-spacing: 2px;
-  padding: 20px 30px;
+  line-height: 3.2rem;
+  letter-spacing: .2rem;
+  padding: 15px 30px;
   border: 2px solid transparent;
   text-decoration: none;
   border-radius: 2%;
@@ -437,15 +437,16 @@ p {
 
 /* --------------- Portrait tablet and small desktops --------------- */
 @media (max-width: 940px) {
-  html {
-    font-size: 90%;
-  }
   .wrapper {
     max-width: 850px;
     width: 90%;
   }
   .communityTextContain {
     padding: 5px;
+  }
+  .greenButton {
+    line-height: 3rem;
+    padding: 10px 20px;
   }
 }
 
@@ -454,9 +455,6 @@ p {
   .wrapper {
     max-width: 700px;
     width: 90%;
-  }
-  html {
-    font-size: 80%;
   }
   header {
     height: 60vh;
@@ -928,9 +926,6 @@ aside .asideText a {
   .blogPage {
     height: 60vh;
   }
-  html {
-    font-size: 70%;
-  }
 }
 
 /* ------------- Landscape phone to portrait table ------------- */
@@ -1201,6 +1196,18 @@ Landscape phones and down ---------------- */
   }
 }
 
+input[type="checkbox"]:checked + ul {
+  left: 0;
+}
+
+label {
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
 .headerNavContainer {
   width: 100%;
   position: absolute;
@@ -1212,7 +1219,6 @@ Landscape phones and down ---------------- */
 }
 
 .headerNavContainer nav {
-  background-color: #dfe2fd;
   padding: 5px;
 }
 
@@ -1291,6 +1297,9 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  label {
+    display: block;
+  }
   .headerNavContainer p {
     display: block;
     margin-left: 10px;
@@ -1335,10 +1344,10 @@ footer p {
     margin-left: 0;
   }
   .headerNavContainer nav li:hover a {
-    border-bottom: 3px solid #f8fb05;
+    border-bottom: 2px solid #f8fb05;
   }
   .headerNavContainer nav li:active a {
-    border-bottom: 3px solid #065635;
+    border-bottom: 2px solid #065635;
   }
   .headerNavContainer label {
     position: absolute;
@@ -1346,10 +1355,12 @@ footer p {
     right: 5%;
     font-size: 6rem;
   }
+  .headerNavContainer label:hover {
+    font-size: 10rem;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
   input[type="checkbox"]:checked + ul {
     left: 0;
-  }
-  input[type="checkbox"] {
-    display: none;
   }
 }

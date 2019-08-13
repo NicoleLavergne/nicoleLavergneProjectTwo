@@ -36,7 +36,7 @@ header{
 h2{
     @include fillHeading;
     font-size:2rem;
-    letter-spacing:2.1px;
+    letter-spacing:.2rem;
 }
 
 p{
@@ -50,9 +50,9 @@ p{
     @include fillHeading;
     background: $green;
     font-size:1.6rem;
-    line-height:32px;
-    letter-spacing:2px;
-    padding:20px 30px;
+    line-height:3.2rem;
+    letter-spacing:.2rem;
+    padding:15px 30px;
     border:2px solid transparent;
     text-decoration: none;
     border-radius:2%;
@@ -246,18 +246,20 @@ p{
 @media
 (max-width: 940px) {
     
-    html{
-        font-size:90%;
-        }
-
     .wrapper{
         max-width:850px;
         width:90%;
     }
 
-        .communityTextContain{
-            padding:5px;
+    .communityTextContain{
+        padding:5px;
     }
+
+    .greenButton{
+        line-height:3rem;
+        padding:10px 20px;
+    }
+
 }
 
 /* ------------- Landscape phone to portrait table ------------- */
@@ -269,9 +271,9 @@ p{
         width:90%;
     }
 
-    html{
-        font-size:80%;
-    }
+    // html{
+    //     font-size:80%;
+    // }
 
     header{
         height: 60vh;
