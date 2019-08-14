@@ -7,21 +7,23 @@ body{
        @include wrapperDesktop;
 }
 
-header{
+.indexHeader{
     background:url(../../images/header-home.jpg)no-repeat;
     background-size:cover;
-    height: 100vh;
+    height: 90vh;
     margin:0;
+    padding-top: 0;
     position:relative;
     background-position: center;
 
-    h1 {
-        @include hOne;
-        width:50%;
-        padding-top:10%;
-    }
 }
 
+.indexMainHeading{
+    @include hOne;
+    width:50%;
+    margin:0;
+    padding-top:15%;
+}
 
 .headerCouch{
     width:50%;
@@ -108,8 +110,8 @@ p{
         }
 
         li:nth-child(2){
-               margin:0px 20px 0px 20px;
-           } 
+            margin:0px 20px 0px 20px;
+        } 
     }
 }
 
@@ -124,40 +126,41 @@ p{
 
         .communityTextContain{
             width:50%;
-            padding:20px;
+            padding:5%;
 
             .iconHeadingContain{
                 display:flex;
             }
         }
     }
+}
 
 .communityTextContain {
     
-        i {
-        color:$black;
-        background:$yellow;
-        border-radius:50%;
-        font-size:1.6rem;
-        padding:15px;
-        margin-right:20px;
-        border:2px solid $yellow;
-        }
+    i {
+    color:$black;
+    background:$yellow;
+    border-radius:50%;
+    font-size:1.6rem;
+    padding:15px;
+    margin-right:20px;
+    border:2px solid $yellow;
+    }
 
-        h3{
-            @include fillHeading;
-            font-size:2rem;
-            margin:0;
-        }
+    h3{
+        @include fillHeading;
+        font-size:2rem;
+        margin:0;
+    }
 
-        p{
-            @include paragraphText;
-            padding-left:70px;
-            margin-top:20px;
+    p{
+        @include paragraphText;
+        padding-left:20%;
+        margin-top:5%;
 
-        }
     }
 }
+
 
 .communityTextContain:hover i{
     border:2px solid $green;
@@ -184,6 +187,10 @@ p{
         .rightText{
             text-align:right;
         }
+    }
+}
+
+    .readMoreGallery{
         
         .readMoreImg{
             width:50%;
@@ -198,7 +205,11 @@ p{
                 @include boxRight;
             }
         }
-        
+    }
+
+
+    .readMoreGallery{
+
         .rightImg{
             position:relative;
             flex-wrap:wrap;
@@ -210,7 +221,7 @@ p{
             }
         }
     }
-}
+
 
 .sofaBackground{
     background:url(../../images/banner-image.jpg) no-repeat bottom fixed;
@@ -239,6 +250,13 @@ p{
         width:90%;
     }
 
+    .indexHeader{
+        height: 60vh;
+
+        h1{
+            font-size:5rem;  
+        }
+    }
     .communityTextContain{
         padding:5px;
     }
@@ -260,24 +278,20 @@ p{
         width:90%;
     }
 
-    header{
-        height: 60vh;
-
-        h1{
-            font-size:2rem;  
-        }
+    .indexHeader{
+        height:50vh;
     }
 
     .discover{
 
-    .discoverContainer{
-        flex:none;
+        .discoverContainer{
+            flex:none;
 
-        .discoverTextContain{
-            width:100%;
-            text-align:center;
-            margin-right:0;
-        }
+            .discoverTextContain{
+                width:100%;
+                text-align:center;
+                margin-right:0;
+            }
 
             .discoverImg{
                 display:none;
@@ -312,7 +326,7 @@ p{
                 width:80%;
                 padding:5%;
                 text-align:left;
-                margin:15px;
+                margin:5%;
                 border-bottom:1px solid green;
 
                 .iconHeadingContain{
@@ -333,7 +347,6 @@ p{
     .readMoreGallery{
 
         .readMoreContain{
-            // margin:0;
 
             .readMoreText {
                 width:100%;
@@ -364,9 +377,10 @@ p{
     }
 }
 
-/* ---------------- Landscape phones and down ---------------- */
+
 @media
 (max-width: 480px) {  
+    // landscape phones and smaller
 
     .wrapper{
         max-width:380px;
@@ -384,6 +398,7 @@ p{
             font-size:4rem;  
         }
     }
+
     .headerCouch{
         width:70%;
     }
@@ -391,9 +406,9 @@ p{
     .greenButton{
         font-size:1.4rem;
         line-height:1.5rem;
-        letter-spacing:2px;
+        letter-spacing:.2rem;
         padding:14px 20px;
-        border-radius:5px;
+        border-radius:3%;
     }
 
     ul .singlePic{
@@ -402,12 +417,11 @@ p{
      .hideImg{
             display:none;
         }
+
 }
 
-
-/* ---------------- iPhone 5/SE & Other small phones ---------------- */
 @media (max-width: 320px) { 
-
+// iphone5 and smaller phones
     html{
         font-size:50%;
     }
@@ -417,17 +431,14 @@ p{
         width:70%;
     }
 
-    header{
 
-        h1{
-            font-size:2rem;
-            line-height:3rem;
-            margin-top:40px;
-        }
+    .indexMainHeading{
+      padding-top:50%;
     }
+    
 
     p{
-        font-size:16px;
+        font-size:1.6rem;
     }
    
     .communityGallery{
@@ -439,12 +450,15 @@ p{
                 .iconHeadingContain{
                     display:flex;
                     flex-direction: column;
-                    
-                    a{
-                        margin:0 auto;
-                    }
                 }
             }
+        }
+    }
+
+    .iconHeadingContain{
+
+        a{
+            margin:0 auto;
         }
     }
 
@@ -463,10 +477,11 @@ p{
         p{
             text-align:center;
             padding:5px;
-            margin-top:20px;
+            margin-top:5%;
             line-height:2.3rem;
 
         }
     }
+
 }
 

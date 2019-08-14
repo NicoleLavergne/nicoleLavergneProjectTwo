@@ -183,23 +183,25 @@ body {
   margin: 0 auto;
 }
 
-header {
+.indexHeader {
   background: url(../../images/header-home.jpg) no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   margin: 0;
+  padding-top: 0;
   position: relative;
   background-position: center;
 }
 
-header h1 {
+.indexMainHeading {
   font-family: "Kumar One Outline", cursive;
   text-transform: uppercase;
   font-size: 4rem;
   letter-spacing: .2rem;
   line-height: 64.5px;
   width: 50%;
-  padding-top: 10%;
+  margin: 0;
+  padding-top: 15%;
 }
 
 .headerCouch {
@@ -321,7 +323,7 @@ p {
 
 .communityGallery .galleryFlex .communityTextContain {
   width: 50%;
-  padding: 20px;
+  padding: 5%;
 }
 
 .communityGallery .galleryFlex .communityTextContain .iconHeadingContain {
@@ -330,7 +332,7 @@ p {
   display: flex;
 }
 
-.communityGallery .communityTextContain i {
+.communityTextContain i {
   color: #151514;
   background: #f8fb05;
   border-radius: 50%;
@@ -340,7 +342,7 @@ p {
   border: 2px solid #f8fb05;
 }
 
-.communityGallery .communityTextContain h3 {
+.communityTextContain h3 {
   font-family: "Kumar One", cursive;
   text-transform: uppercase;
   letter-spacing: 2.1px;
@@ -348,12 +350,12 @@ p {
   margin: 0;
 }
 
-.communityGallery .communityTextContain p {
+.communityTextContain p {
   font-size: 1.8rem;
   letter-spacing: 2px;
   line-height: 32px;
-  padding-left: 70px;
-  margin-top: 20px;
+  padding-left: 20%;
+  margin-top: 5%;
 }
 
 .communityTextContain:hover i {
@@ -387,28 +389,28 @@ p {
   text-align: right;
 }
 
-.readMoreGallery .readMoreContain .readMoreImg {
+.readMoreGallery .readMoreImg {
   width: 50%;
 }
 
-.readMoreGallery .readMoreContain .leftImg {
+.readMoreGallery .leftImg {
   position: relative;
 }
 
-.readMoreGallery .readMoreContain .leftImg img {
+.readMoreGallery .leftImg img {
   position: absolute;
   top: -10%;
   -webkit-box-shadow: 20px 20px #f8fb05;
           box-shadow: 20px 20px #f8fb05;
 }
 
-.readMoreGallery .readMoreContain .rightImg {
+.readMoreGallery .rightImg {
   position: relative;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.readMoreGallery .readMoreContain .rightImg img {
+.readMoreGallery .rightImg img {
   position: absolute;
   bottom: -10%;
   -webkit-box-shadow: -20px 20px #f8fb05;
@@ -436,6 +438,12 @@ p {
     max-width: 850px;
     width: 90%;
   }
+  .indexHeader {
+    height: 60vh;
+  }
+  .indexHeader h1 {
+    font-size: 5rem;
+  }
   .communityTextContain {
     padding: 5px;
   }
@@ -450,11 +458,8 @@ p {
     max-width: 700px;
     width: 90%;
   }
-  header {
-    height: 60vh;
-  }
-  header h1 {
-    font-size: 2rem;
+  .indexHeader {
+    height: 50vh;
   }
   .discover .discoverContainer {
     -webkit-box-flex: 0;
@@ -488,7 +493,7 @@ p {
     width: 80%;
     padding: 5%;
     text-align: left;
-    margin: 15px;
+    margin: 5%;
     border-bottom: 1px solid green;
   }
   .communityGallery .galleryFlex .communityTextContain .iconHeadingContain {
@@ -527,7 +532,6 @@ p {
   }
 }
 
-/* ---------------- Landscape phones and down ---------------- */
 @media (max-width: 480px) {
   .wrapper {
     max-width: 380px;
@@ -548,9 +552,9 @@ p {
   .greenButton {
     font-size: 1.4rem;
     line-height: 1.5rem;
-    letter-spacing: 2px;
+    letter-spacing: .2rem;
     padding: 14px 20px;
-    border-radius: 5px;
+    border-radius: 3%;
   }
   ul .singlePic {
     margin-left: 5%;
@@ -560,7 +564,6 @@ p {
   }
 }
 
-/* ---------------- iPhone 5/SE & Other small phones ---------------- */
 @media (max-width: 320px) {
   html {
     font-size: 50%;
@@ -569,13 +572,11 @@ p {
     max-width: 290px;
     width: 70%;
   }
-  header h1 {
-    font-size: 2rem;
-    line-height: 3rem;
-    margin-top: 40px;
+  .indexMainHeading {
+    padding-top: 50%;
   }
   p {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
   .communityGallery .galleryFlex .communityTextContain .iconHeadingContain {
     display: -webkit-box;
@@ -586,7 +587,7 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .communityGallery .galleryFlex .communityTextContain .iconHeadingContain a {
+  .iconHeadingContain a {
     margin: 0 auto;
   }
   .communityTextContain i {
@@ -600,7 +601,7 @@ p {
   .communityTextContain p {
     text-align: center;
     padding: 5px;
-    margin-top: 20px;
+    margin-top: 5%;
     line-height: 2.3rem;
   }
 }
@@ -781,13 +782,14 @@ body {
   margin: 0 auto;
 }
 
-.blogPage .wrapper h1 {
+.blogHeading {
   font-family: "Kumar One Outline", cursive;
   text-transform: uppercase;
   font-size: 4rem;
   letter-spacing: .2rem;
   line-height: 64.5px;
   margin-top: 0;
+  padding-top: 15%;
 }
 
 .mainFlex {
@@ -833,7 +835,7 @@ article .blogPostTextContain h3 {
   font-size: 1.8rem;
   line-height: 2rem;
   font-style: italic;
-  letter-spacing: 1.2px;
+  letter-spacing: .2rem;
 }
 
 article .blogPostTextContain p {
@@ -859,12 +861,12 @@ article .blogPostTextContain p {
   font-size: 2rem;
   text-transform: uppercase;
   line-height: 2rem;
-  letter-spacing: 2px;
+  letter-spacing: .2rem;
 }
 
 .commentsFormContain .date {
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: .2rem;
   font-size: 1.8rem;
   margin: 0;
 }
@@ -931,6 +933,9 @@ aside .asideText a {
   .blogPage {
     height: 40vh;
   }
+  .blogHeading {
+    font-size: 6rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -993,16 +998,19 @@ aside .asideText a {
     position: relative;
     top: -10%;
   }
-  .mainFlex aside .asideText {
+  aside .asideText {
     background: #e0fddf;
     margin: 3%;
     padding: 30px;
     text-align: center;
     border: 1px solid #065635;
   }
-  .mainFlex aside img {
+  aside img {
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+  .blogHeading {
+    padding-top: 30%;
   }
   .articleContain {
     -webkit-box-shadow: none;
@@ -1031,18 +1039,23 @@ aside .asideText a {
   }
 }
 
-.touch {
-  width: 100%;
-  margin: 0;
-  padding-top: 15%;
-}
-
 .contactHeader {
   background: url(../../images/contact-image.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 50vh;
   margin: 0 auto;
+}
+
+.touch {
+  font-family: "Kumar One Outline", cursive;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: .2rem;
+  line-height: 64.5px;
+  width: 100%;
+  margin: 0;
+  padding-top: 20%;
 }
 
 .contactMain {
@@ -1082,15 +1095,15 @@ aside .asideText a {
 .socialNav ul li a {
   color: #151514;
   font-size: 2rem;
-  padding: 10px;
+  padding: 5%;
 }
 
-.socialNav ul li i {
+.socialNav ul i {
   padding: 15px;
   border-radius: 50%;
 }
 
-.socialNav ul li a:hover i {
+.socialNav ul a:hover i {
   background: #065635;
   color: #f5f5f5;
   -webkit-transition: .3s;
@@ -1098,7 +1111,7 @@ aside .asideText a {
 }
 
 .contactText {
-  font-size: 1.8;
+  font-size: 1.8rem;
   font-family: "Lato", sans-serif;
 }
 
@@ -1127,8 +1140,8 @@ aside .asideText a {
   .contactHeader {
     height: 40vh;
   }
-  .contactHeader h1 {
-    font-size: 4rem;
+  .touch {
+    font-size: 5rem;
   }
   .contactMain {
     display: block;
@@ -1292,6 +1305,7 @@ input[type="checkbox"] {
   right: 0;
   -webkit-transition: top .3s;
   transition: top .3s;
+  z-index: 100;
 }
 
 .headerNavContainer nav {
@@ -1349,7 +1363,7 @@ input[type="checkbox"] {
   border-bottom: 3px solid #065635;
 }
 
-.headerNavContainer nav a {
+.headerNavContainer a {
   padding: 10px 5px;
   font-size: 1.6rem;
   text-decoration: none;
@@ -1407,13 +1421,13 @@ footer p {
     border-bottom: 3px solid #f8fb05;
     width: 90%;
   }
-  .headerNavContainer nav ul li:hover a {
+  .headerNavContainer nav li:hover a {
     background: #f8fb05;
     padding: 10px 40px;
     -webkit-transition: .3s;
     transition: .3s;
   }
-  .headerNavContainer nav ul a {
+  .headerNavContainer nav a {
     padding: 15px;
     font-size: 2.5rem;
     font-weight: 700;

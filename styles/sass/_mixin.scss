@@ -1,9 +1,3 @@
-@mixin mqTablet{
-    @media (max-width:768px){
-        @content;
-    }
-}
-
 @mixin wrapperDesktop{
     max-width:1280px;
 	width:80%;

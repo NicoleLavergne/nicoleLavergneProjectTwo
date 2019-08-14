@@ -15,11 +15,13 @@ body{
 	width:80%;
     margin:0 auto;
 
-        h1{
-            @include hOne;
-            margin-top:0;
-        }
-    }
+    }   
+}
+
+.blogHeading{
+    @include hOne;
+    margin-top:0;
+    padding-top:15%;
 }
    
 
@@ -60,7 +62,7 @@ article{
             font-size:1.8rem;
             line-height:2rem;
             font-style: italic;
-            letter-spacing:1.2px;
+            letter-spacing:.2rem;
         }
 
         p{
@@ -93,12 +95,12 @@ article{
         font-size:2rem;
         text-transform:uppercase;
         line-height:2rem;
-        letter-spacing: 2px;
+        letter-spacing:.2rem;
     }
 
     .date{
         text-transform:uppercase;
-        letter-spacing: 2px;
+        letter-spacing:.2rem;
         font-size:1.8rem;
         margin:0;
     }
@@ -164,9 +166,13 @@ aside{
     .blogPage{
         height:40vh;
     }
+
+
+    .blogHeading{
+        font-size: 6rem;
+    }
+
 }
-
-
 
 @media(max-width: 768px) { 
     // landscape and portrait tablet
@@ -244,19 +250,27 @@ aside{
                 position: relative;
                 top:-10%;
             }
+        }
+    }
 
-            .asideText{
-                background:$ice;
-                margin:3%;
-                padding:30px;
-                text-align: center;
-                border:1px solid $green;
-            }
- 
-            img{
-                box-shadow:none;
-            }
-        }  
+    aside{
+
+        .asideText{
+            background:$ice;
+            margin:3%;
+            padding:30px;
+            text-align: center;
+            border:1px solid $green;
+        }
+
+        img{
+            box-shadow:none;
+        }
+    }  
+
+
+    .blogHeading{
+        padding-top:30%;
     }
 
     .articleContain{
