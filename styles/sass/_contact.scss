@@ -1,9 +1,9 @@
+
 .touch{
    width:100%;
    margin:0;
-   padding-top:20%;
+   padding-top:15%;
 }
-
 
 .contactHeader {
    background:url(../../images/contact-image.jpg) no-repeat;
@@ -12,11 +12,12 @@
    height:50vh;
    margin:0 auto;
 
+
 }
 
 .contactMain{
    display:flex;
-   margin-bottom:15%;
+   margin-bottom:10%;
    flex-direction: row;
    justify-content: space-between;
 }
@@ -45,7 +46,7 @@
          }
 
          i{
-            padding:30px;
+            padding:15px;
             border-radius:50%;
          }
 
@@ -82,115 +83,248 @@
    }
 }
 
-@media
-(max-width: 940px) { 
 
-html{
-   font-size:55%;
-}
+@media(max-width: 940px) { 
+// Portrait tablet and small desktops
 
-.contactMain{
-      display:flex;
-      margin-bottom:0;
-      flex-direction:column;
-}
-.contactHeader{
-
-   h1{
-      font-size:4.5rem;
+   html{
+      font-size:55%;
    }
-}
 
-.contactText{
+    .contactHeader{
+        height:40vh;
 
-   margin:100%;
-   p{
-      font-size:3rem;
-      text-align:center;
+        h1{
+            font-size:4rem;  
+        }
+    }
+
+   .contactMain{
+         display:block;
+         margin-bottom:0;
+         padding:10%;
+
+      .formContain{
+
+         .postForm{
+            margin:0 auto;
+            box-shadow: none;
+         }    
+      }
    }
-}
+
+
+   .contactText{
+
+      p{
+         font-size:3rem;
+         text-align:center;
+      }
+   }
 
    .socialContain{
-      width:80%;
-      display:block;
-      // padding-top:50%;
-      margin:30px auto;
-      // text-align: center;
+      margin:auto;
+      width:100%;
+      margin-top:100%;
+   
    }
 
    .socialContain:focus, .socialContain:hover{
       background:$white;
    }
 
-    .socialNav{
-         ul li {
-            margin:10px;
+   .socialNav{
 
-            a{
-               color:$black;
-               font-size:4rem;
-               padding:10px;
-         
-            }
+      ul li {
+         margin:2%;
+
+         a{
+            color:$black;
+            font-size:4rem;
+            padding:1rem;
+      
          }
-         
-      } 
+      }        
+   } 
 }
 
 
 
 @media(max-width: 768px){ 
-  
-   .socialContain{
-      padding:50px;
-      width:50%;
-      display:block;
-      margin:20 auto;
+//  Landscape phone to portrait table 
+  html{
+      font-size:50%;
    }
 
-} /* ---------------- Landscape phones and down ---------------- */
+        .contactHeader{
+           height:30vh;
+           
+           h1{
+              padding-top:30%;
+              font-size:4rem;  
+           }
+        }
+   
+
+   .contactMain{
+         display:block;
+         margin-bottom:0;
+         padding:10%;
+
+         .formContain{
+
+            .postForm{
+               margin:0 auto;
+               box-shadow: none;
+            }
+               
+         }
+   }
+
+
+   .contactText{
+
+      p{
+         font-size:3rem;
+         text-align:center;
+      }
+   }
+
+   .socialContain{
+      margin:auto;
+      width:50%;
+      margin-top:130%;
+   
+   }
+
+   .socialContain:focus, .socialContain:hover{
+      background:$white;
+   }
+
+   .socialNav{
+
+      ul li {
+         margin:1%;
+
+         a{
+            color:$black;
+            font-size:4rem;
+            padding:1rem;
+      
+         }
+      }        
+   } 
+}
+
 
 @media
-(max-width: 480px) {
+(max-width: 528px) {
+// Landscape phones and down
 
    .socialContain{
+      display:block;
       padding:10px;
-      width:80%;
+      width:50%;
+
+
+      .contactText{
+
+         p.email{
+            display: block;
+         }
+   
+         p{
+            display:none;
+         }
+      }
    }
    
+   .contactMain{
+         display:block;
+         margin:0 auto;
+         margin-top:5%;
+         margin-bottom:5%;
+         padding:1%;
+   }
+
   .socialNav{
   
-   ul{
-   
-      li{
-         margin:5px;
-   
-         a{
-            font-size:3rem;
-            padding:10px;
-         }
+      ul{
+         margin-top:20%;
+      
+         li{
+            margin:1%;
+      
+            a{
+               font-size:2.5rem;
+               padding:2%;
+            }
 
-         i{
-            padding:10px;
+            i{
+               padding:3%;
+            }
+         }
+      }
+   }
+
+
+   .contactText{
+      p{
+         font-size:2rem;
+         text-align:center;
+      }
+   }
+} 
+
+@media(max-width: 430px) {
+   // iPhone 5/SE & Other small phones
+
+   
+
+   .wrapper{
+
+      .contactMain{
+         padding:0;
+      }
+   }
+
+   .socialNav{
+  
+      margin-top:50%;
+      
+      ul{
+      
+         li{
+            margin:1%;
+      
+            a{
+               font-size:2rem;
+               padding:2%;
+            }
+         }
+      }
+
+   }
+
+}
+
+@media(max-width:392px){
+   // small phone
+
+   .socialNav{
+  
+      margin-top:70%;
+      
+      ul{
+      
+         li{
+            margin:1%;
+      
+            a{
+               font-size:2rem;
+               padding:2%;
+            }
          }
       }
    }
 }
-   .contactText{
-   p{
-      font-size:2rem;
-      text-align:center;
-   }
-}
- } /* ---------------- iPhone 5/SE & Other small phones ---------------- */
-@media
-(max-width: 320px) {
-
-   html{
-      font-size:45%;
-   }
-    .socialContain{
-      padding:10px;
-   }
- }
-

@@ -109,23 +109,10 @@ p{
 
         li:nth-child(2){
                margin:0px 20px 0px 20px;
-           }
-
-           li.hideImg{
-            display:none;
-        }
+           } 
     }
 }
 
-// .flickity-button{
-//     width:10%;
-//     background:transparent;
-
-//     .flickity-prev-next-button {
-// 		  widows: 10px;
-// 		  height:10px;
-// 	  }
-// }
 
 .communityGallery{
     background:$white;
@@ -242,9 +229,10 @@ p{
 
 }
 
-/* --------------- Portrait tablet and small desktops --------------- */
+
 @media
 (max-width: 940px) {
+    // portrait tablet small desktop
     
     .wrapper{
         max-width:850px;
@@ -262,18 +250,15 @@ p{
 
 }
 
-/* ------------- Landscape phone to portrait table ------------- */
+
 @media
 (max-width: 770px) { 
+    // landscape phone portrait tablet
     
     .wrapper{
         max-width:700px;
         width:90%;
     }
-
-    // html{
-    //     font-size:80%;
-    // }
 
     header{
         height: 60vh;
@@ -392,6 +377,13 @@ p{
         font-size:40%;
     }
 
+    header{
+        height: 40vh;
+
+        h1{
+            font-size:4rem;  
+        }
+    }
     .headerCouch{
         width:70%;
     }
@@ -403,6 +395,13 @@ p{
         padding:14px 20px;
         border-radius:5px;
     }
+
+    ul .singlePic{
+        margin-left:5%;
+    }
+     .hideImg{
+            display:none;
+        }
 }
 
 

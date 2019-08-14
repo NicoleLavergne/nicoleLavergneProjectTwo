@@ -306,10 +306,6 @@ p {
   margin: 0px 20px 0px 20px;
 }
 
-.picGallery ul li.hideImg {
-  display: none;
-}
-
 .communityGallery {
   background: #f5f5f5;
   padding: 100px 0px 100px 0px;
@@ -435,7 +431,6 @@ p {
   padding: 100px 0px 100px 0px;
 }
 
-/* --------------- Portrait tablet and small desktops --------------- */
 @media (max-width: 940px) {
   .wrapper {
     max-width: 850px;
@@ -450,7 +445,6 @@ p {
   }
 }
 
-/* ------------- Landscape phone to portrait table ------------- */
 @media (max-width: 770px) {
   .wrapper {
     max-width: 700px;
@@ -542,6 +536,12 @@ p {
   body {
     font-size: 40%;
   }
+  header {
+    height: 40vh;
+  }
+  header h1 {
+    font-size: 4rem;
+  }
   .headerCouch {
     width: 70%;
   }
@@ -551,6 +551,12 @@ p {
     letter-spacing: 2px;
     padding: 14px 20px;
     border-radius: 5px;
+  }
+  ul .singlePic {
+    margin-left: 5%;
+  }
+  .hideImg {
+    display: none;
   }
 }
 
@@ -921,14 +927,12 @@ aside .asideText a {
   font-size: 1.6rem;
 }
 
-/* --------------- Portrait tablet and small desktops --------------- */
 @media (max-width: 940px) {
   .blogPage {
-    height: 60vh;
+    height: 40vh;
   }
 }
 
-/* ------------- Landscape phone to portrait table ------------- */
 @media (max-width: 768px) {
   article .blogPostTextContain {
     padding: 30px;
@@ -950,12 +954,16 @@ aside .asideText a {
   aside .asideText p {
     letter-spacing: .2rem;
   }
+  .greenContainer {
+    width: 100%;
+    padding-left: 10%;
+    margin: 0 auto;
+  }
+  .greenContainer .postForm .greenForm {
+    margin: 0 auto;
+  }
 }
 
-/* ---------------- 
-
-
-Landscape phones and down ---------------- */
 @media (max-width: 667px) {
   .mainFlex {
     display: -webkit-box;
@@ -1023,11 +1031,10 @@ Landscape phones and down ---------------- */
   }
 }
 
-/* ---------------- iPhone 5/SE & Other small phones ---------------- */
 .touch {
   width: 100%;
   margin: 0;
-  padding-top: 20%;
+  padding-top: 15%;
 }
 
 .contactHeader {
@@ -1042,7 +1049,7 @@ Landscape phones and down ---------------- */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1079,7 +1086,7 @@ Landscape phones and down ---------------- */
 }
 
 .socialNav ul li i {
-  padding: 30px;
+  padding: 15px;
   border-radius: 50%;
 }
 
@@ -1117,68 +1124,118 @@ Landscape phones and down ---------------- */
   html {
     font-size: 55%;
   }
-  .contactMain {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .contactHeader {
+    height: 40vh;
   }
   .contactHeader h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
-  .contactText {
-    margin: 100%;
+  .contactMain {
+    display: block;
+    margin-bottom: 0;
+    padding: 10%;
+  }
+  .contactMain .formContain .postForm {
+    margin: 0 auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .contactText p {
     font-size: 3rem;
     text-align: center;
   }
   .socialContain {
-    width: 80%;
-    display: block;
-    margin: 30px auto;
+    margin: auto;
+    width: 100%;
+    margin-top: 100%;
   }
   .socialContain:focus, .socialContain:hover {
     background: #f5f5f5;
   }
   .socialNav ul li {
-    margin: 10px;
+    margin: 2%;
   }
   .socialNav ul li a {
     color: #151514;
     font-size: 4rem;
-    padding: 10px;
+    padding: 1rem;
   }
 }
 
 @media (max-width: 768px) {
-  .socialContain {
-    padding: 50px;
-    width: 50%;
+  html {
+    font-size: 50%;
+  }
+  .contactHeader {
+    height: 30vh;
+  }
+  .contactHeader h1 {
+    padding-top: 30%;
+    font-size: 4rem;
+  }
+  .contactMain {
     display: block;
-    margin: 20 auto;
+    margin-bottom: 0;
+    padding: 10%;
+  }
+  .contactMain .formContain .postForm {
+    margin: 0 auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .contactText p {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .socialContain {
+    margin: auto;
+    width: 50%;
+    margin-top: 130%;
+  }
+  .socialContain:focus, .socialContain:hover {
+    background: #f5f5f5;
+  }
+  .socialNav ul li {
+    margin: 1%;
+  }
+  .socialNav ul li a {
+    color: #151514;
+    font-size: 4rem;
+    padding: 1rem;
   }
 }
 
-/* ---------------- Landscape phones and down ---------------- */
-@media (max-width: 480px) {
+@media (max-width: 528px) {
   .socialContain {
+    display: block;
     padding: 10px;
-    width: 80%;
+    width: 50%;
+  }
+  .socialContain .contactText p.email {
+    display: block;
+  }
+  .socialContain .contactText p {
+    display: none;
+  }
+  .contactMain {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 1%;
+  }
+  .socialNav ul {
+    margin-top: 20%;
   }
   .socialNav ul li {
-    margin: 5px;
+    margin: 1%;
   }
   .socialNav ul li a {
-    font-size: 3rem;
-    padding: 10px;
+    font-size: 2.5rem;
+    padding: 2%;
   }
   .socialNav ul li i {
-    padding: 10px;
+    padding: 3%;
   }
   .contactText p {
     font-size: 2rem;
@@ -1186,13 +1243,32 @@ Landscape phones and down ---------------- */
   }
 }
 
-/* ---------------- iPhone 5/SE & Other small phones ---------------- */
-@media (max-width: 320px) {
-  html {
-    font-size: 45%;
+@media (max-width: 430px) {
+  .wrapper .contactMain {
+    padding: 0;
   }
-  .socialContain {
-    padding: 10px;
+  .socialNav {
+    margin-top: 50%;
+  }
+  .socialNav ul li {
+    margin: 1%;
+  }
+  .socialNav ul li a {
+    font-size: 2rem;
+    padding: 2%;
+  }
+}
+
+@media (max-width: 392px) {
+  .socialNav {
+    margin-top: 70%;
+  }
+  .socialNav ul li {
+    margin: 1%;
+  }
+  .socialNav ul li a {
+    font-size: 2rem;
+    padding: 2%;
   }
 }
 
@@ -1280,7 +1356,7 @@ input[type="checkbox"] {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: .2rem;
   color: #151514;
   border-bottom: 2px solid transparent;
 }
@@ -1288,12 +1364,14 @@ input[type="checkbox"] {
 footer {
   background: #151514;
   color: #f5f5f5;
-  padding: 3px;
+  padding: 1%;
 }
 
 footer p {
   text-align: center;
-  letter-spacing: 1.2px;
+  letter-spacing: .2rem;
+  margin: 0;
+  font-size: 1.4rem;
 }
 
 @media (max-width: 768px) {

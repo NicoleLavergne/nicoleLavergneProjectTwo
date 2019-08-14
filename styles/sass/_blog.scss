@@ -157,22 +157,19 @@ aside{
     }  
 }
 
-/* --------------- Portrait tablet and small desktops --------------- */
+
 @media(max-width: 940px) { 
+    // portrait tablet
     
     .blogPage{
-        height:60vh;
+        height:40vh;
     }
-
-    // html{
-    //     font-size:190%;
-    // }
-} 
+}
 
 
-/* ------------- Landscape phone to portrait table ------------- */
-@media
-(max-width: 768px) { 
+
+@media(max-width: 768px) { 
+    // landscape and portrait tablet
 
     article .blogPostTextContain{
             padding:30px;
@@ -205,12 +202,27 @@ aside{
         }
     }
 
-} /* ---------------- 
+
+    .greenContainer{
+        width:100%;
+        padding-left:10%;
+        margin:0 auto;
+
+        .postForm{
+
+            .greenForm{
+               margin:0 auto;
+            }
+
+        }
+
+    }
+} 
 
 
-Landscape phones and down ---------------- */
 @media
 (max-width: 667px) { 
+    // landscape phones
 
     .mainFlex{
         display:flex;
@@ -270,6 +282,7 @@ Landscape phones and down ---------------- */
     }
 
     .postContain{
+
         .commentText{
             width:100%;
         }
@@ -277,13 +290,10 @@ Landscape phones and down ---------------- */
 }
 
 @media(max-width: 480px) { 
+
     html{
         font-size:50%;
     }
 
-
 }
     
-/* ---------------- iPhone 5/SE & Other small phones ---------------- */
-@media
-(max-width: 320px) { }
